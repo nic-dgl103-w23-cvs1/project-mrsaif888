@@ -1,0 +1,440 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+h1 , h2,h3{
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.fa-wifi{
+    color: crimson;
+}
+.container {
+    margin: 20px;
+}
+.header-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.icons-left p{
+    padding-left: 10px;
+    color: crimson;
+    font-weight: bolder;
+    
+}
+
+.icons-right .fa-play{
+    padding-left: 10px;
+}
+
+.logo-header{
+    background-color: #052f69;
+    height: 150px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+ 
+}
+.logo-header h2{
+    padding-top: 50px;
+    font-family: 'Tilt Prism', cursive;
+    font-size: 4rem;
+    margin-top: 0px;
+    color: white;
+}
+.logo-header h2::before{
+    content: "";
+    width: 280px;
+    height: 5px;
+    background-color: crimson;
+    position: absolute;
+    top: 75px;
+    border-radius: 20px;
+    left: 0;
+}
+.logo-header h2::after{
+    content: "";
+    width: 280px;
+    height: 5px;
+    background-color: crimson;
+    position: absolute;
+    top: 75px;
+    border-radius: 20px;
+    right: 0;
+}
+
+.list-items{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+.list-items li{
+    font-family: 'Anton', sans-serif;
+}
+.list-items li a{
+    background-color: #052f69;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.section-padding{
+    padding: 15px 0;
+}
+.background-image{
+    position: relative;
+}
+
+.background-image img{
+    width: 100%;
+}
+.tagline{
+    position: absolute;
+    transform: translate(-50%, -150%);
+    top: 50%;
+  left: 50%;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-family: 'Tilt Prism', cursive;
+  color: white;
+    
+}
+.tagline ::before{
+    content: " ";
+    width: 600px;
+    border-radius: 10px;
+    background-color: crimson;
+    height: 4px;
+    position: absolute;
+    bottom: 80px;
+}
+.inquiry{
+    position: absolute;
+    border: 4px solid #fff;
+    /* overflow: hidden; */
+    padding: 0;
+    bottom: 25px;
+    right: 25px;
+    width: 45%;
+    max-width: 600px;
+    border-radius: 20px;
+    background: #fff;
+}
+.heading-inquiry h2{
+    background: #e2e2e2;
+    font-size: 23px;
+    font-variant: Small-Caps;
+    
+    font-weight: normal;
+    text-align: center;
+    color: #666;
+    /* text-transform: uppercase; */
+    padding: 10px;
+    border-radius: 10px;
+}
+.form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 50px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 5px;
+   
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  table{
+    padding: 0 20px;
+  }
+  .make-inquiry{
+    border-radius: 10px;
+    padding: 12px 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    margin: auto;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    margin-bottom: 5px;
+}
+.side-image{
+    position: absolute;
+   
+    left: 50px;
+    bottom: 10px;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #052f69;
+    padding: 20px 0;
+    
+}
+.innercard{
+  background-color:  #e2e2e2;
+    margin: 0 auto;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+width: 300px;
+    
+}
+.card-one{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.card-one h2{
+    width: 50%;
+}
+.route-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    width: 20%;
+}
+
+.route-card p{
+    padding: 0;
+    margin: 5px 0;
+    font-weight: bolder;
+}
+.info-section{
+    position: relative;
+    background-color: #F5F5F5;
+}
+.heading-info{
+    text-align: center;
+    color: #333;
+    font-weight: bolder;
+    max-width: 100%;
+    
+}
+.heading-info h2::before{
+    content: "";
+    width: 480px;
+    height: 5px;
+    background-color: crimson;
+    position: absolute;
+    top: 65px;
+    border-radius: 20px;
+   
+    
+}
+.heading-info span{
+    color: #0096D2;
+}
+.celebration{
+    display: flex;  
+    font-size: 1.2rem;
+    
+}
+.celebration img{
+    padding-right: 20px;
+}
+
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    padding-top: 30px;
+}
+.items-footer{
+    display: flex;
+}
+
+.items-footer nav{
+padding-right: 25px;
+
+}
+.footer-list{
+    padding-top: 15px;
+}
+.footer-list li{
+    line-height: 1.8;
+    
+    
+}
+.footer-list li a{
+    color: #666;
+}
+.footer-list-heading{
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.footer-list-heading:hover{
+    color: black
+}
+.footer-box{
+    background-color: #F5F5F5;
+    color: #333;
+    border-radius: 8px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.email-footer{
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    
+}
+.maps{
+    text-align: center;
+    overflow: hidden;
+}
+.maps h2{
+    font-family: 'Anton', sans-serif;
+    color: #052f69;
+    font-size: 2.3rem;
+    margin: 0;
+}
+.maps span{
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #333;
+}
+
+/* ========Account Page================ */
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.login-button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 30%;
+ 
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* =======Travel Links =========== */
+
+.travel-heading{
+    text-align: center;
+}
+.travel-heading h2{
+    color: #052f69;
+    font-family: 'Anton', sans-serif;
+    font-size: 2.3rem;
+}
+.travel-info{
+    text-align: center;
+}
+.box-design{
+    border: 2px solid #666666;
+    padding: 5px;
+    margin: 0 auto 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    max-width: 500px;
+    height: 100%;
+}
+.box-design h3{
+    text-transform: uppercase;
+   
+}
+.box-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.box-info h4{
+    margin: 10px;
+}
+.box-info a{
+    padding: 5px 10px ;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+.transport-info span{
+    padding: 0 5px;
+}
+.tofino-info{
+    align-items: flex-start;
+}
+.travel-anchor{
+    display: flex;
+    flex-direction: column;
+}
+.tofino-info a{
+    margin-top: 5px;
+}
