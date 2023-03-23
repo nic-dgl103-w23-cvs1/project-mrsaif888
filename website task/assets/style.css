@@ -438,3 +438,68 @@ span.psw {
 .tofino-info a{
     margin-top: 5px;
 }
+
+/* ======Booking====== */
+.steps{
+    background-color: #F5F5F5;
+    margin: 0 auto;
+    padding-top: 15px;
+    display: flex;
+}
+.steps-info{
+    width: 20%;
+    opacity: 0.5;
+}
+.step-1{
+    opacity: 1;
+}
+.background-booking{
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    height: 58px;
+    width: 58px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #d2242b 0%,#005899 25%,#2fb4c8 50%,#005899 75%,#d2242b 100%);
+}
+.background-booking h2{
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    padding: 5px 0;
+    box-sizing: border-box;
+    position: relative;
+    top: 4px;
+    font-size: 32px;
+    color: #007B9C;
+    background-color: #fff;
+}
+.heading-background{
+    text-align: center;
+    text-transform: uppercase;
+}
+.heading-selection{
+    text-align: center;
+}
+.heading-selection h2{
+    color: #052f69;
+    text-transform: uppercase;
+    
+}
+.trip-form{
+    max-width: 600px;
+    width: 45%;
+    margin: 0 auto;
+    border: 4px solid #666666;
+    border-radius: 20px;
+    padding:  10px;
+}
+.rules{
+    padding-top: 20px;
+    text-align: center;
+}
+.rules h3{
+    color: #d2242b;
+}
