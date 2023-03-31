@@ -507,6 +507,9 @@ span.psw {
 }
 .toggle{
     display: none;
+    padding-right: 20px;
+    font-size: 25px;
+    color: white;
 }
 
 @media (max-width :600px){
@@ -517,18 +520,18 @@ span.psw {
         display: none;
     }
     .logo-header a h2{
-        font-size: 1rem;
+        font-size: 1rem !important;
         padding-top: 20px;
     }
     .logo-header h2::before{
-        width: 50px;
-        top: unset;
-        height: 3px;
+        width: 50px !important;
+        top: unset !important;
+        height: 3px !important;
     }
     .logo-header h2::after{
-        width: 50px;
-        top: unset;
-        height: 3px;
+        width: 50px !important;
+        top: unset !important;
+        height: 3px !important;
     }
     input[type=text], select{
 padding: 0;
