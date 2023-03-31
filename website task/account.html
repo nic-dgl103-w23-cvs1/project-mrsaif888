@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Accounts</title>
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon-16x16.png">
 </head>
@@ -26,8 +27,11 @@
             </div>
             
         </div>
-        <div class="logo-header">
-            <a href="./index.html"><h2> Island Link Bus </h2></a>
+        <div class="logo-header" >
+            <a href="./index.html"><h2 data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="1200"> Island Link Bus </h2></a>
            
         </div>
         
@@ -125,6 +129,8 @@
 
         </div>
     </footer>
-    
+    <script>
+        AOS.init();
+        </script>
     </body>
     </html>

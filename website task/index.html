@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Welcome To ISL</title>
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon-16x16.png">
 </head>
@@ -26,18 +27,22 @@
             </div>
             
         </div>
-        <div class="logo-header">
-            <a href="./index.html"><h2> Island Link Bus </h2></a>
+        <div class="logo-header" >
+            <a href="./index.html"><h2 data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="1200"> Island Link Bus </h2></a>
            
         </div>
         
     </header>
     <nav>
         <ul class="list-items">
-            <li><a href="./account.html">My Account</a></li>
-            <li><a href="./travellinks.html">Travel Links</a></li>
-            <li><a href="./contact.html"> Contact</a></li>
-            <li><a href="./booking.html">Booking</a></li>
+            <li class="toggle"><i class="fa-solid fa-bars"></i></li>
+            <li class="nav-links"><a href="./account.html">My Account</a></li>
+            <li class="nav-links"><a href="./travellinks.html">Travel Links</a></li>
+            <li class="nav-links"><a href="./contact.html"> Contact</a></li>
+            <li class="nav-links"><a href="./booking.html">Booking</a></li>
             
         </ul>
     </nav>
@@ -279,5 +284,14 @@
 
         </div>
     </footer>
+    <script>
+        AOS.init();
+        const toggleButton= document.getElementsByClassName('toggle')[0];
+  const navbarLinks = document.getElementsByClassName('nav-links');
+  toggleButton.addEventListener('click' ,function(){
+    for(var i=0; i< navbarLinks.length; i++)
+    navbarLinks[i].classList.toggle('active');
+  });
+        </script>
 </body>
 </html>
