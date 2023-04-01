@@ -38,10 +38,11 @@
     </header>
     <nav>
         <ul class="list-items">
-            <li><a href="./account.html">My Account</a></li>
-            <li><a href="./travellinks.html">Travel Links</a></li>
-            <li><a href="./contact.html"> Contact</a></li>
-            <li><a href="./booking.html">Booking</a></li>
+            <li class="toggle"><i class="fa-solid fa-bars"></i></li>
+            <li class="nav-links"><a href="./account.html">My Account</a></li>
+            <li class="nav-links"><a href="./travellinks.html">Travel Links</a></li>
+            <li class="nav-links"><a href="./contact.html"> Contact</a></li>
+            <li class="nav-links"><a href="./booking.html">Booking</a></li>
             
         </ul>
     </nav>
@@ -131,6 +132,12 @@
     </footer>
     <script>
         AOS.init();
+        const toggleButton= document.getElementsByClassName('toggle')[0];
+  const navbarLinks = document.getElementsByClassName('nav-links');
+  toggleButton.addEventListener('click' ,function(){
+    for(var i=0; i< navbarLinks.length; i++)
+    navbarLinks[i].classList.toggle('active');
+  });
         </script>
     </body>
     </html>
