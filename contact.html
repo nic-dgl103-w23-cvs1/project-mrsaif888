@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <title>Contact Us</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon-16x16.png">
+</head>
+
+<body>
+  <header>
+    <div class="container header-icons">
+      <div class="icons-left">
+        <i class="fa-solid fa-wifi"></i>
+        <p>Free Wifi Bus</p>
+      </div>
+      <div class="icons-right">
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-play"></i>
+        <a href="#"> SIGN IN </a>
+      </div>
+
+    </div>
+    <div class="logo-header">
+      <a href="./index.html">
+        <h2 data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1200">
+          Island Link Bus </h2>
+      </a>
+
+    </div>
+
+  </header>
+  <nav>
+    <ul class="list-items">
+      <li class="toggle"><i class="fa-solid fa-bars"></i></li>
+      <li class="nav-links"><a href="./account.html">My Account</a></li>
+      <li class="nav-links"><a href="./travellinks.html">Travel Links</a></li>
+      <li class="nav-links"><a href="./contact.html"> Contact</a></li>
+      <li class="nav-links"><a href="./booking.html">Booking</a></li>
+
+    </ul>
+  </nav>
+  <section class="section-padding">
+    <div class="background-image">
+      <img src="./assets/images/contact.jpg" alt="contact">
+
+    </div>
+  </section>
+  <section class="section-padding">
+    <div class="contact-form">
+      <div class="content">
+        <div class="left-side">
+          <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">462 - 4111 Hastings Street</div>
+            <div class="text-two">Burnaby, BC V5C 6T7</div>
+          </div>
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Phone</div>
+            <div class="text-one">+111 2222 333</div>
+            <div class="text-two">+444 3434 555 </div>
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">info@islandlinkbus.com</div>
+
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="topic-text">Send us a message</div>
+          <p>If you need to contact us, please send email to: info@islandlinkbus.com. We endeavour to answer all emails
+            expeditiously.</p>
+          <form action="#">
+            <div class="input-box">
+              <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Enter your email">
+            </div>
+            <div class="input-box message-box">
+              <input type="text" placeholder="Type Your Message">
+            </div>
+            <div class="button">
+              <input type="button" value="Send Now">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="footer-main">
+        <div class="items-footer">
+          <nav>
+            <a href="" class="footer-list-heading">BOOKING / ENQUIRY</a>
+            <ul class="footer-list">
+              <li><a href="">Future Travels</a></li>
+              <li><a href="">Today's Travel</a></li>
+
+            </ul>
+          </nav>
+          <nav>
+            <a href="" class="footer-list-heading">MY ACCOUNT</a>
+
+          </nav>
+          <nav>
+            <a href="" class="footer-list-heading"> IMPORTANT INFO</a>
+            <ul class="footer-list">
+              <li><a href="">What's New</a></li>
+              <li><a href="">Policies and Procedures</a></li>
+              <li><a href="">Frequently Asked Questions</a></li>
+              <li><a href="">Personal Deportment / Etiquette</a></li>
+              <li><a href="">News Release - January 12, 2023</a></li>
+              <li><a href="">COVID-19</a></li>
+            </ul>
+          </nav>
+          <nav>
+            <a href="" class="footer-list-heading">TRAVEL LINKS</a>
+
+            <ul class="footer-list">
+              <li><a href="">Local Links</a></li>
+              <li><a href="">Vancouver Island</a></li>
+              <li><a href="">Route Network</a></li>
+
+            </ul>
+          </nav>
+
+        </div>
+        <div class="footer-box">
+          <h2>Contact Info</h2>
+          <p>Island Express Bus Inc.
+            <br>462 - 4111 Hastings Street,
+            Burnaby, BC V5C 6T7
+          </p>
+          <a href="" class="email-footer">Email: Island Link Bus</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <script>
+    AOS.init();
+    const toggleButton = document.getElementsByClassName('toggle')[0];
+    const navbarLinks = document.getElementsByClassName('nav-links');
+    toggleButton.addEventListener('click', function () {
+      for (var i = 0; i < navbarLinks.length; i++)
+        navbarLinks[i].classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>
